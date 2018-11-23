@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--CSS link-->
+<link rel="stylesheet" type="text/css" href="file:///Users/tmc802/Desktop/The%20Tech%20Academy%20projects/Pizza%20Menu%20Project/CSS/PizzaStyle.css">
+
+<head>
+
+<meta charset="utf-8">
+	<title>Pizza Menu Demo</title>
+
+</head>
+
+
+
+<!--Main content-->
+<body class="body-img">
+
+<div class="box text-red">
+
+<div>
+	<div class="text-center header-container background-white">
+		<h1>Pizza Menu | Online order</h1>
+	</div>
+</div>
+
+<form id="frmMenu">
+	<!--Size Selector-->
+	<div class="container sm-text menu-left">
+	<h3 class="text-center background-blue selection-text">Size</h3>
+	<ul class="cursive">
+		<input class="size" type="radio" name="Size" value="Personal Pizza" checked>Personal ($6.00)<br>
+		<input class="size" type="radio" name="Size" value="Medium Pizza">Medium ($10.00)<br>
+		<input class="size" type="radio" name="Size" value="Large Pizza">Large ($14.00)<br>
+		<input class="size" type="radio" name="Size" value="Extra Large Pizza">Extra-large ($16.00)<br>
+	</ul>
+	</div>
+	<!--/End Size Selector-->
+
+<!--Sauce Selector-->
+
+	<div class="container sm-text menu-left">
+		<h3 class="text-center background-blue selection-text">Sauce</h3>
+			<ul class="cursive">
+				<input class="sauce" type="radio" name="Sauce" value="Marinara Sauce" checked>Marinara Sauce</input><br>
+				<input class="sauce" type="radio" name="Sauce" value="White Sauce">White Sauce</input><br>
+				<input class="sauce" type="radio" name="Sauce" value="Barbeque Sauce">Barbeque Sauce</input><br>
+				<input class="sauce" type="radio" name="Sauce" value="No Sauce">No Sauce</input><br>
+			</ul>
+	</div>
+	<!--/End Sauce Selector-->
+
+	<!--Cheese Selector-->
+	<div class="container sm-text menu-left">
+		<h3 class="text-center background-blue selection-text">Cheese</h3>
+			<h4 class="text-center">Extra Cheese:
+				<br>+$3.00 for any size pizza</h4>
+				<ul class="cursive">
+					<input class="cheese" type="radio" name="Cheese" value="Regular" checked>Regular</input><br>
+					<input class="cheese" type="radio" name="Cheese" value="No Cheese">No Cheese</input><br>
+					<input class="cheese" type="radio" name="Cheese" value="Extra Cheese">Extra Cheese</input><br>
+				</ul>
+	</div>
+	<!--/End Cheese Selector-->
+
+
+	<!--Crust Selector-->
+	<div class="container sm-text menu-right">
+		<h3 class="text-center background-blue selection-text">Crust</h3>
+			<h4 class="text-center">+$3.00 for cheese stuffed crust.<br> All other crusts are complementary</h4>
+				<ul class="cursive">
+					<input class="crust" type="radio" name="Crust" value="Plain Crust" checked>Plain<br>
+					<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust">Garlic Butter Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust">Cheese Stuffed Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Spicy Crust">Spicy Crust</input><br>
+					<input class="crust" type="radio" name="Crust" value="House Special Crust">House Special Crust<br>
+				</ul>
+	</div>
+	<!--/End Crust Selector-->
+
+
+	<!--Meat Selection-->
+	<div class="container sm-text menu-right">
+		<h3 class="text-center background-blue selection-text">Meat</h3>
+			<h4 class="text-center">Additional Meat items:
+				<br>$1.00 ea additional meat items beyond <br> the first complementay meat item</h4>
+					<ul class="cursive">
+						<input class="meats" type="checkbox" name="Meat" value="Pepperoni" checked>Pepperoni<br>
+						<input class="meats" type="checkbox" name="Meat" value="Sausage">Sausage<br>
+						<input class="meats" type="checkbox" name="Meat" value="Canadian Bacon">Canadian Bacon<br>
+						<input class="meats" type="checkbox" name="Meat" value="Ground Beef">Ground Beef<br>
+						<input class="meats" type="checkbox" name="Meat" value="Anchovy">Anchovy<br>
+						<input class="meats" type="checkbox" name="Meat" value="Chicken">Chicken<br>
+					</ul>
+	</div>
+	<!--/End Size Selector-->
+
+	
+
+	<!--Veggie Selection	-->
+	<div class="container sm-text menu-right">
+		<h3 class="text-center background-blue selection-text">Veggies</h3>
+			<h4 class="text-center">Additional veggie items: <br>
+				$1.00 ea additional veggie items beyond<br> the first complementay meat item</h4>
+					<ul class="cursive">
+						<input class="veggies" type="checkbox" name="Veggies" value="Tomatoes" checked>Tomatoes<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Onions">Onions<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Olives">Olives<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Green Peppers">Green Peppers<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Mushrooms">Mushrooms<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Pineapple">Pineapple<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Spinach">Spinach<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Jalapeno">Jalapeno<br>
+					</ul>
+	</div>
+	<!--/End Veggie Selector-->
+
+
+</form><br>
+<!--/ End Main content-->
+
+<!--order and cancel btns-->
+	<div class="controls">
+
+			<div class="button-order" onclick="getReceipt()">
+				<p>Place Order</p>
+			</div>
+	
+			<div class="button-cancel" onclick="clearAll()">
+				<p>Cancel</p>
+			</div>
+
+			<div id="cart">
+				<div id="title1"><h3>You Ordered:</h3></div>
+				<div id="showText1"></div>
+				<div id="showText2"></div>
+				<div id="totalPrice1"><h3>Total Price:</h3></div>
+				<div id="totalPrice2"></div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+<!--/end order and cancel btns-->
+
+<!--My Javascript-->
+<script  src="file:///Users/tmc802/Desktop/The%20Tech%20Academy%20projects/Pizza%20Menu%20Project/JS/PizzaMenu.js"></script>
+
+
+</body>
+
+</html>

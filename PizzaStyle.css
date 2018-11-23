@@ -1,0 +1,211 @@
+/* =======================
+container and box styling
+==========================*/
+.body-img {
+	background-image: url("file:///Users/tmc802/Desktop/The%20Tech%20Academy%20projects/Pizza%20Menu%20Project/images/5557c044f662e9e.jpg");
+	background-size: 100%;
+}
+
+.header-container {
+	width:375px;
+	height:50px;
+	border-radius:10px;
+	border: solid;
+	background-color: white;
+	margin: 1em 10px 1em 10em;
+	padding: 0 0 20px 0;
+}
+
+.container {
+	width:325px;
+	height:350px;
+	border-radius:15px;
+	border: solid;
+	display: inline-block;
+	vertical-align: top;
+	background-color: white;
+}
+
+/* =========
+text-styling
+==========*/
+
+.sm-text {
+	font-size: 15px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.background-blue {
+	background-color: blue;
+	color: white; 
+	font-weight: bold; 
+	letter-spacing: -1px; 
+	line-height: 1; 
+	text-align: center;
+	font-size: 25px;
+	border-radius: 15px;
+	border: solid;
+}
+
+.text-red {
+	color: red;
+}
+
+.cursive {
+font-family: cursive;
+}
+
+.selection-text {
+	box-shadow: 10px;
+	text-transform: uppercase;
+}
+
+/* ============
+Box Styling
+=============*/
+.box {
+  display: inline-block;
+  width:667px;
+	height:1400px;
+ margin: 0 0 0 30em;
+}
+
+.menu-left {
+	display: inline-block;
+}
+
+.menu-right {
+	padding: 0px;
+}
+
+.meats {
+	margin: 10px 0 0 0;
+}
+
+/*============
+button styling
+============*/
+
+.button-cancel {
+cursor: pointer;
+font-weight: bold;
+padding: 0 100px 0 100px;
+background-color: rgba(255,255,255, 1);
+border: solid;
+border-radius: 80px;
+text-align: center;
+
+}
+
+.button-order {
+cursor: pointer;
+font-weight: bold;
+padding: 0 100px 0 100px;
+background-color: rgba(255,255,255, 1);
+border: solid;
+border-radius: 80px;
+text-align: center;
+
+}
+
+.button-cancel:hover {
+	font: 18px sans-serif;
+	font-weight: bold;
+	background-color: white; 
+}
+
+.button-order:hover {
+	font: 18px sans-serif;
+	font-weight: bold;
+	background-color: white; 
+}
+
+.controls {
+
+    justify-content: space-between;
+}
+
+.controls>.button {
+	flex: 1 150px;
+}
+
+#cart {
+	opacity: 0;
+	margin: 0 0 0 55px;
+	width: 550px;
+    display: inline-flex;
+    flex-wrap: inline;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	background-color: rgba(244, 245, 247, 0.9);
+	border: 2px solid #080054;
+	box-shadow: 0 0 0 3px rgba(255,255,255, .8);
+	border-radius: 25px;
+}
+
+#title1 {
+	color: red;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	border-radius: 25px 0 0 0;
+}
+
+#title2 {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	border-radius: 0 25px 0 0;
+	text-shadow: 1.5px 1.5px 5px #00f, 1px 1px 5px #000;
+	font-family: cursive;
+}
+
+#showText1 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#showText2 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice1 {
+	flex: 1 250px;
+	padding: 0 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice2 {
+	flex: 1 250px;
+	font-weight: bold;
+	padding: 20px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+/*pizza tutorial css*/
+
+
+
+
+
+
+
+
+
+
